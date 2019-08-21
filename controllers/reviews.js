@@ -15,7 +15,7 @@ const express = require('express')
  * controller you need.
  * 
  */
-const templateApi = require('../models/template.js')
+const reviewsApi = require('../models/reviews.js')
 
 /* Step 3 
  * 
@@ -25,20 +25,13 @@ const templateApi = require('../models/template.js')
  * TODO: rename this from templateRouter to something that makes sense. (e.g:
  * `shopRouter`)
  */
-const templateRouter = express.Router()
+const reviewsRouter = express.Router()
 
 /* Step 4
  * 
  * TODO: Put all request handlers here
  */
 
-/* Step 5
- *
- * TODO: delete this handler; it's just a sample
- */ 
-templateRouter.get('/', (req, res) => {
-  res.send(templateApi.getHelloWorldString())
-})
 
 /* Step 6
  *
@@ -46,5 +39,5 @@ templateRouter.get('/', (req, res) => {
  *
  */
 module.exports = {
-  templateRouter
+  reviewsRouter
 }
