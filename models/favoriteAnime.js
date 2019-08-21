@@ -13,7 +13,26 @@ const getAllAnime = () => {
     return AnimeCollection.find();
 }
 
+const getAnime = () => {
+
+}
+
+const addAnime = () => {
+
+}
+
+const editAnime = () => {
+
+}
+
+const deleteAnime = () => {
+
+}
 
 module.exports = {
-  getAllAnime
+  getAllAnime, 
+  getAnime,
+  addAnime,
+  editAnime,
+  deleteAnime
 }
