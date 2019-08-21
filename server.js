@@ -9,7 +9,7 @@ const methodOverride = require('method-override')
  */
 const { animeRouter } = require('./controllers/favoriteAnime.js')
 const { interestRouter } = require('./controllers/interest.js')
-const { reviewRouter } = require('./controllers/review.js')
+const { reviewRouter } = require('./controllers/reviews.js')
 
 
 /* Step 3
