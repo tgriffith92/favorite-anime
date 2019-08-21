@@ -7,7 +7,7 @@ const FavoriteAnimeSchema = new mongoose.Schema({
  description: String
 })
 
-const AnimeCollection = mongoose.model('Sample', FavoriteAnimeSchema)
+const AnimeCollection = mongoose.model('Favorite', FavoriteAnimeSchema)
 
 const getAllAnime = () => {
     return AnimeCollection.find();
