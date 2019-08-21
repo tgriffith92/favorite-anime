@@ -32,8 +32,17 @@ const favoriteAnimeRouter = express.Router()
  * TODO: Put all request handlers here
  */
 
+favoriteAnimeRouter.get('/', (req, res) => {
+    
+    favoriteAnimeApi.getAllAnime().then((allAnime) => {
 
-/* Step 6
+        console.log('allAnime', allAnime);
+        res.render('anime', {allAnime})
+    })
+
+})
+
+/* Step 5
  *
  * Export the router from the file.
  *

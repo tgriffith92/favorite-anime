@@ -33,7 +33,7 @@ const interestRouter = express.Router()
  */
 
 
-/* Step 6
+/* Step 5
  *
  * Export the router from the file.
  *
