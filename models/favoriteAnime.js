@@ -13,20 +13,20 @@ const getAllAnime = () => {
     return AnimeCollection.find();
 }
 
-const getAnime = () => {
-
+const getAnime = (animeId) => {
+    return AnimeCollection.findById(animeId);
 }
 
-const addAnime = () => {
-
+const addAnime = (newAnime) => {
+    return AnimeCollection.create(newAnime);
 }
 
-const editAnime = () => {
-
+const editAnime = (animeId, updatedAnime) => {
+    return AnimeCollection.findByIdAndUpdate(animeId, updatedAnime);
 }
 
-const deleteAnime = () => {
-
+const deleteAnime = (animeId) => {
+    return AnimeCollection.findByIdAndDelete(animeId);
 }
 
 module.exports = {
