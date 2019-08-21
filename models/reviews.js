@@ -9,9 +9,11 @@ const ReviewsSchema = new mongoose.Schema({
 
 const ReviewsCollection = mongoose.model('Reviews', ReviewsSchema)
 
-
+const getAllReviews = () => {
+    return ReviewsCollection.find();
+}
 
 
 module.exports = {
-  
+  getAllReviews,
 }
