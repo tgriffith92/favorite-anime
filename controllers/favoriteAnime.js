@@ -32,6 +32,14 @@ const animeRouter = express.Router()
  * TODO: Put all request handlers here
  */
 
+animeRouter.get('/', (req, res) => {
+    console.log('test');
+    animeApi.getAllAnime().then((allAnime) => {
+        console.log('allAnime', allAnime)
+        res.render('favoriteAnime', {allAnime});
+    })
+
+}) 
 
 /* Step 5
  *
