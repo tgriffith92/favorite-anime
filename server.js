@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
-const { templateRouter } = require('./controllers/template.js')
+const { animeRouter } = require('./controllers/favoriteAnime.js')
 
 
 /* Step 3
@@ -51,7 +51,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
-app.use('/anime', templateRouter)
+app.use('/anime', animeRouter)
 
 
 /* Step 5
