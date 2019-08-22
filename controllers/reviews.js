@@ -63,6 +63,14 @@ reviewsRouter.post('/', (req, res) => {
   })
 })
 
+reviewsRouter.put('/:reviewId', (req, res) => {
+  reviewsApi.editReview(req.params.reviewId, req.body)
+  .then((editReview) => {
+      res.render('editReview', {editReview});
+      res.redirect('/animeReviews');
+  })
+})
+
 /* Step 5
  *
  * Export the router from the file.

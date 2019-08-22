@@ -1,0 +1,14 @@
+<form method="POST" action="/animeReviews/{{editReview._id}}?_method=PUT">
+
+<label for="name">Name:</label>
+<input type="text" name="name" value="{{editReview.name}}"/><br>
+
+<label for="rating">Rating (between 1 and 5):</label>
+<input type="number" name="rating" min="1" max="5" value="{{editReview.rating}}"/><br>
+
+<label for="firstAnime">First Anime:</label>
+<input type="text" name="reviews" value="{{editReview.reviews}}"/><br>
+
+<input type="submit" value="Submit"/>
+
+</form>
