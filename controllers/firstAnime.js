@@ -69,8 +69,8 @@ firstAnimeRouter.post('/', (req, res) => {
   })
 })
 
-firstAnimeRouter.put('/:favoriteId', (req, res) => {
-  firstAnimeApi.editFirstAnime(req.params.favoriteId, req.body)
+firstAnimeRouter.put('/:firstId', (req, res) => {
+  firstAnimeApi.editFirstAnime(req.params.firstId, req.body)
   .then((editFirst) => {
       res.render('editFirst', {editFirst});
       res.redirect('/firstAnime');
