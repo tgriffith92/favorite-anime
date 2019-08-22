@@ -33,10 +33,10 @@ const firstAnimeRouter = express.Router()
  */
 
 firstAnimeRouter.get('/', (req, res) => {
-  console.log('firstAnime')
+  console.log('allFirsts')
   firstAnimeApi.getAllFirstAnime().then((allFirst) => {
       
-      res.render('firstAnime', {allFirst});
+      res.render('allFirsts', {allFirst});
   })
 
 })
@@ -44,6 +44,22 @@ firstAnimeRouter.get('/', (req, res) => {
 firstAnimeRouter.get('/firstAnime', (req, res) => {
   console.log('firstAnime');
   res.render('firstAnime');
+})
+
+firstAnimeRouter.get('/:firstId', (req, res) => {
+  console.log('firstId');
+  firstAnimeApi.getFirstAnime(req.params.favoriteId)
+  .then((singleFirst) => {
+      res.render('singleFirst', {singleFirst});
+  });
+})
+
+firstAnimeRouter.post('/', (req, res) => {
+  console.log('post');
+  firstAnimeApi.addFirstAnime(req.body)
+  .then(() => {
+      res.redirect('/anime');
+  })
 })
 
 /* Step 5

@@ -2,7 +2,7 @@ const mongoose = require('./connection.js')
 
 
 const FirstAnimeSchema = new mongoose.Schema({
- name: String,
+ firstName: String,
  year: Number,
  firstAnime: String
 })

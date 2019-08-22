@@ -1,0 +1,15 @@
+<div>
+    <p>Name: {{singleFirst.name}}</p>
+    <p>Favorite Anime: {{singleFirst.favorite}}</p>
+    <p>Genre: {{singleFirst.genre}}</p>
+    <p>Age: {{singleFirst.age}}</p>
+    <p>Description: {{singleFirst.description}}</p>
+</div>
+
+<p><a href="/anime/{{singleFirst._id}}/edit">Edit Anime</a></p>
+
+<form method="POST" action="/firstAnime/{{singleFirst._id}}?_method=DELETE">
+
+    <input type="submit" value="Delete First Anime"/>
+
+</form>
