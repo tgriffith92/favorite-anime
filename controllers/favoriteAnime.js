@@ -53,7 +53,11 @@ animeRouter.get('/favoriteId', (req, res) => {
     });
 })
 
-
+animeRouter.post('/anime', (req, res) => {
+    animeApi.addAnime(req.body).then(() => {
+        res.redirect('/anime');
+    })
+})
 
 /* Step 5
  *
