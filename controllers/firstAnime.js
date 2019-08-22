@@ -54,6 +54,13 @@ firstAnimeRouter.get('/:firstId', (req, res) => {
   });
 })
 
+firstAnimeRouter.get('/:firstId/initial', (req, res) => {
+  firstAnimeApi.getFirstAnime(req.params.firstId)
+  .then((editFirst) => {
+      res.render('editFirst', {editFirst})
+  })
+})
+
 firstAnimeRouter.post('/', (req, res) => {
   console.log('post');
   firstAnimeApi.addFirstAnime(req.body)
