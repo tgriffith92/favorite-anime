@@ -59,7 +59,7 @@ reviewsRouter.get('/:reviewId/individual', (req, res) => {
   console.log('reviewId');
   reviewsApi.getReview(req.params.reviewId)
   .then((editReview) => {
-      res.render('review', {editReview});
+      res.render('editReview', {editReview});
   });
 })
 
