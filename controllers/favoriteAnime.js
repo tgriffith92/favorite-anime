@@ -46,7 +46,7 @@ animeRouter.get('/favorite', (req, res) => {
     res.render('favoriteAnime');
 })
 
-animeApi.get('/favoriteId', (req, res) => {
+animeRouter.get('/favoriteId', (req, res) => {
     console.log('favoriteId');
     res.render('singleFavorite');
 })
