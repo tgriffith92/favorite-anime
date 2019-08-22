@@ -77,6 +77,13 @@ animeRouter.put('/:favoriteId', (req, res) => {
     })
 })
 
+animeRouter.delete('/:favoriteId', (req, res) => {
+    animeApi.deleteAnime(req.params.favoriteId)
+    .then(() => {
+        res.redirect('/anime');
+    })
+})
+
 
 /* Step 5
  *
