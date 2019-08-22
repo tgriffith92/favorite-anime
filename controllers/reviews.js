@@ -55,6 +55,14 @@ reviewsRouter.get('/:reviewId', (req, res) => {
   });
 })
 
+reviewsRouter.get('/:reviewId/individual', (req, res) => {
+  console.log('reviewId');
+  reviewsApi.getReview(req.params.reviewId)
+  .then((editReview) => {
+      res.render('review', {editReview});
+  });
+})
+
 reviewsRouter.post('/', (req, res) => {
   console.log('post');
   reviewsApi.addReview(req.body)
