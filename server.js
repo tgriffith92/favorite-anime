@@ -54,8 +54,8 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/anime', animeRouter)
-app.use('/anime', firstAnimeRouter)
-app.use('/anime', reviewsRouter)
+app.use('/firstAnime', firstAnimeRouter)
+app.use('/animeReviews', reviewsRouter)
 
 
 /* Step 5

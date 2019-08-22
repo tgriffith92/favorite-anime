@@ -1,6 +1,6 @@
 <h1>Anime List</h1>
 
-<p>Favorite Anime</p>
+<h2>Favorite Anime</h2>
 
 <p><a href="/anime/favorite">Add your favorite anime!</a></p>
 
@@ -12,6 +12,16 @@
     {{/each}}
 </ul>
 
-<p>First Anime</p>
+<h2>First Anime</h2>
 
-<p>Anime Review</p>
+<p><a href="/firstAnime">What was your first anime?</a></p>
+
+<ul>
+    {{#each allFirst}}
+    <li>
+        <a href="/anime/{{_id}}">{{name}}</a>
+    </li>
+    {{/each}}
+</ul>
+
+<h2>Anime Review</h2>

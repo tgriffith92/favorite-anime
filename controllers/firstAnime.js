@@ -32,6 +32,19 @@ const firstAnimeRouter = express.Router()
  * TODO: Put all request handlers here
  */
 
+firstAnimeRouter.get('/', (req, res) => {
+  console.log('firstAnime')
+  firstAnimeApi.getAllFirstAnime().then((allFirst) => {
+      
+      res.render('firstAnime', {allFirst});
+  })
+
+})
+
+firstAnimeRouter.get('/firstAnime', (req, res) => {
+  console.log('firstAnime');
+  res.render('firstAnime');
+})
 
 /* Step 5
  *

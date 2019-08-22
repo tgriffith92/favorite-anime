@@ -3,7 +3,7 @@ const mongoose = require('./connection.js')
 
 const FirstAnimeSchema = new mongoose.Schema({
  name: String,
- startDate: Date,
+ year: Number,
  firstAnime: String
 })
 
