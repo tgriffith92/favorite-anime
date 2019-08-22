@@ -33,6 +33,15 @@ const reviewsRouter = express.Router()
  */
 
 
+reviewsRouter.get('/', (req, res) => {
+  console.log('allReviews')
+  reviewsApi.getAllReviews().then((allReviews) => {
+      
+      res.render('allReviews', {allReviews});
+  })
+
+}) 
+
 /* Step 5
  *
  * Export the router from the file.

@@ -1,0 +1,11 @@
+<h2>Anime Reviews</h2>
+
+<p><a href="/animeReviews/review">Leave a review here!</a></p>
+
+<ul>
+    {{#each allFirst}}
+    <li>
+        <a href="/animeReviews/{{_id}}">{{firstAnime}}</a>
+    </li>
+    {{/each}}
+</ul>
