@@ -73,6 +73,7 @@ animeRouter.put('/:favoriteId', (req, res) => {
     animeApi.editAnime(req.params.favoriteId, req.body)
     .then((editFavorite) => {
         res.render('editFavorite', {editFavorite});
+        res.redirect('/anime');
     })
 })
 
