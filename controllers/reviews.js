@@ -15,7 +15,7 @@ const express = require('express')
  * controller you need.
  * 
  */
-const animeApi = require('../models/favoriteAnime.js')
+const reviewsApi = require('../models/reviews.js')
 
 /* Step 3 
  * 
@@ -25,7 +25,7 @@ const animeApi = require('../models/favoriteAnime.js')
  * TODO: rename this from templateRouter to something that makes sense. (e.g:
  * `shopRouter`)
  */
-const animeRouter = express.Router()
+const reviewsRouter = express.Router()
 
 /* Step 4
  * 
@@ -39,5 +39,5 @@ const animeRouter = express.Router()
  *
  */
 module.exports = {
-  animeRouter
+  reviewsRouter
 }
