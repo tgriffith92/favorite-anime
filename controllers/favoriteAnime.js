@@ -36,12 +36,12 @@ animeRouter.get('/', (req, res) => {
     console.log('test');
     animeApi.getAllAnime().then((allAnime) => {
         console.log('allAnime', allAnime)
-        res.render('favoriteAnime', {allAnime});
+        res.render('allAnime', {allAnime});
     })
 
 })
 
-animeRouter.get('/new/favorite', (req, res) => {
+animeRouter.get('/favorite', (req, res) => {
     console.log('test');
 })
 
