@@ -8,6 +8,7 @@ const methodOverride = require('method-override')
  *
  */
 const { animeRouter } = require('./controllers/favoriteAnime.js')
+const { interestRouter } = require('./controllers/interest.js')
 
 
 /* Step 3
@@ -52,6 +53,7 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/anime', animeRouter)
+app.use('/anime', interestRouter)
 
 
 /* Step 5
