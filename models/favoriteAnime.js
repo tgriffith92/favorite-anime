@@ -1,7 +1,7 @@
 const mongoose = require('./connection.js')
 
 const FavoriteAnimeSchema = new mongoose.Schema({
- name: String,
+ favorite: String,
  genre: String,
  age: Number,
  description: String

@@ -39,7 +39,13 @@ animeRouter.get('/', (req, res) => {
         res.render('favoriteAnime', {allAnime});
     })
 
-}) 
+})
+
+animeRouter.get('/new/favorite', (req, res) => {
+    console.log('test');
+})
+
+
 
 /* Step 5
  *
