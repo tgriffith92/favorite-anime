@@ -69,6 +69,14 @@ firstAnimeRouter.post('/', (req, res) => {
   })
 })
 
+firstAnimeRouter.put('/:favoriteId', (req, res) => {
+  firstAnimeApi.editFirstAnime(req.params.favoriteId, req.body)
+  .then((editFirst) => {
+      res.render('editFirst', {editFirst});
+      res.redirect('/firstAnime');
+  })
+})
+
 /* Step 5
  *
  * Export the router from the file.

@@ -1,21 +1,13 @@
-<form method="POST" action="/anime/{{editFavorite._id}}?_method=PUT">
+<form method="POST" action="/firstAnime/{{editFavorite._id}}?_method=PUT">
 
 <label for="name">Name:</label>
-<input type="text" name="name" value="{{editFavorite.name}}"/><br>
+<input type="text" name="fullName" value="{{editFirst.fullName}}"/><br>
 
-<label for="favorite">Favorite Anime:</label>
-<input type="text" name="favorite" value="{{editFavorite.favorite}}"/><br>
+<label for="year">Start Year:</label>
+<input type="number" name="year" value="{{editFirst.year}}"/><br>
 
-<label for="genre">Genre:</label>
-<input type="text" name="genre" value="{{editFavorite.genre}}"/><br>
-
-<label for="age">Age:</label>
-<input type="number" name="age" value="{{editFavorite.age}}"/><br>
-
-<label for="description">Description:</label><br>
-<textarea name="description" cols="30" rows="10">
-    Enter a brief description...
-</textarea><br>
+<label for="firstAnime">First Anime:</label>
+<input type="text" name="firstAnime" value="{{editFirst.firstAnime}}"/><br>
 
 <input type="submit" value="Submit"/>
 
