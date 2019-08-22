@@ -15,7 +15,7 @@ const express = require('express')
  * controller you need.
  * 
  */
-const interestApi = require('../models/interest.js')
+const firstAnimeApi = require('../models/firstAnime.js')
 
 /* Step 3 
  * 
@@ -25,7 +25,7 @@ const interestApi = require('../models/interest.js')
  * TODO: rename this from templateRouter to something that makes sense. (e.g:
  * `shopRouter`)
  */
-const interestRouter = express.Router()
+const firstAnimeRouter = express.Router()
 
 /* Step 4
  * 
@@ -39,5 +39,5 @@ const interestRouter = express.Router()
  *
  */
 module.exports = {
-  interestRouter
+  firstAnimeRouter
 }

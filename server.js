@@ -8,7 +8,7 @@ const methodOverride = require('method-override')
  *
  */
 const { animeRouter } = require('./controllers/favoriteAnime.js')
-const { interestRouter } = require('./controllers/interest.js')
+const { firstAnimeRouter } = require('./controllers/firstAnime.js')
 const { reviewsRouter } = require('./controllers/reviews.js')
 
 
@@ -54,7 +54,7 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/anime', animeRouter)
-app.use('/anime', interestRouter)
+app.use('/anime', firstAnimeRouter)
 app.use('/anime', reviewsRouter)
 
 
