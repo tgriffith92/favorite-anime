@@ -41,14 +41,14 @@ firstAnimeRouter.get('/', (req, res) => {
 
 })
 
-firstAnimeRouter.get('/firstAnime', (req, res) => {
+firstAnimeRouter.get('/initial', (req, res) => {
   console.log('firstAnime');
   res.render('firstAnime');
 })
 
 firstAnimeRouter.get('/:firstId', (req, res) => {
   console.log('firstId');
-  firstAnimeApi.getFirstAnime(req.params.favoriteId)
+  firstAnimeApi.getFirstAnime(req.params.firstId)
   .then((singleFirst) => {
       res.render('singleFirst', {singleFirst});
   });
@@ -58,7 +58,7 @@ firstAnimeRouter.post('/', (req, res) => {
   console.log('post');
   firstAnimeApi.addFirstAnime(req.body)
   .then(() => {
-      res.redirect('/anime');
+      res.redirect('/firstAnime');
   })
 })
 
