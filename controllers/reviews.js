@@ -47,6 +47,22 @@ reviewsRouter.get('/review', (req, res) => {
   res.render('createReview');
 })
 
+reviewsRouter.get('/:reviewId', (req, res) => {
+  console.log('reviewId');
+  reviewsApi.getReview(req.params.reviewId)
+  .then((review) => {
+      res.render('review', {review});
+  });
+})
+
+reviewsRouter.post('/', (req, res) => {
+  console.log('post');
+  reviewsApi.addReview(req.body)
+  .then(() => {
+      res.redirect('/animeReviews');
+  })
+})
+
 /* Step 5
  *
  * Export the router from the file.
