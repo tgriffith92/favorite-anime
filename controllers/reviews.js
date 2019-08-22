@@ -42,6 +42,11 @@ reviewsRouter.get('/', (req, res) => {
 
 }) 
 
+reviewsRouter.get('/review', (req, res) => {
+  console.log('review');
+  res.render('createReview');
+})
+
 /* Step 5
  *
  * Export the router from the file.
