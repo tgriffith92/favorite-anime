@@ -79,6 +79,13 @@ reviewsRouter.put('/:reviewId', (req, res) => {
   })
 })
 
+reviewsRouter.delete('/:reviewId', (req, res) => {
+  reviewsApi.deleteReview(req.params.reviewId)
+  .then(() => {
+      res.redirect('/animeReviews');
+  })
+})
+
 /* Step 5
  *
  * Export the router from the file.
