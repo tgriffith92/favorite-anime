@@ -77,6 +77,13 @@ firstAnimeRouter.put('/:firstId', (req, res) => {
   })
 })
 
+firstAnimeRouter.delete('/:firstId', (req, res) => {
+  firstAnimeApi.deleteFirstAnime(req.params.firstId)
+  .then(() => {
+      res.redirect('/firstAnime');
+  })
+})
+
 /* Step 5
  *
  * Export the router from the file.
