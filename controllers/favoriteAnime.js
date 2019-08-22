@@ -33,20 +33,23 @@ const animeRouter = express.Router()
  */
 
 animeRouter.get('/', (req, res) => {
-    console.log('test');
+    console.log('allAnime')
     animeApi.getAllAnime().then((allAnime) => {
-        console.log('allAnime', allAnime)
+        
         res.render('allAnime', {allAnime});
     })
 
 })
 
 animeRouter.get('/favorite', (req, res) => {
-    console.log('test');
+    console.log('favorite');
     res.render('favoriteAnime');
 })
 
-
+animeApi.get('/favoriteId', (req, res) => {
+    console.log('favoriteId');
+    res.render('');
+})
 
 /* Step 5
  *
