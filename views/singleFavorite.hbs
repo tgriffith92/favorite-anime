@@ -1,12 +1,14 @@
 <div>
-    <p>Name {{singleFavorite.name}}</p>
-    <p>Favorite Anime {{singleFavorite.favorite}}</p>
-    <p>Genre {{singleFavorite.genre}}</p>
-    <p>Age {{singleFavorite.age}}</p>
-    <p>Description {{singleFavorite.description}}</p>
+    <p>Name: {{singleFavorite.name}}</p>
+    <p>Favorite Anime: {{singleFavorite.favorite}}</p>
+    <p>Genre: {{singleFavorite.genre}}</p>
+    <p>Age: {{singleFavorite.age}}</p>
+    <p>Description: {{singleFavorite.description}}</p>
 </div>
 
-<form method="POST" action="/issues/{{singleFavorite._id}}?_method=DELETE">
+<p><a href="/anime/{{singleFavorite._id}}/edit">Edit Anime</a></p>
+
+<form method="POST" action="/anime/{{singleFavorite._id}}?_method=DELETE">
 
     <input type="submit" value="Delete Favorite"/>
 

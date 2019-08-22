@@ -48,17 +48,34 @@ animeRouter.get('/favorite', (req, res) => {
 
 animeRouter.get('/:favoriteId', (req, res) => {
     console.log('favoriteId');
-    animeApi.getAnime(req.params.favoriteId).then((singleFavorite) => {
+    animeApi.getAnime(req.params.favoriteId)
+    .then((singleFavorite) => {
         res.render('singleFavorite', {singleFavorite});
     });
 })
 
+animeRouter.get('/:favoriteId/edit', (req, res) => {
+    animeApi.getAnime(req.params.favoriteId)
+    .then((editFavorite) => {
+        res.render('editFavorite', {editFavorite})
+    })
+})
+
 animeRouter.post('/', (req, res) => {
     console.log('post');
-    animeApi.addAnime(req.body).then(() => {
+    animeApi.addAnime(req.body)
+    .then(() => {
         res.redirect('/anime');
     })
 })
+
+animeRouter.put('/:favoriteId', (req, res) => {
+    animeApi.editAnime(req.params.favoriteId, req.body)
+    .then((editFavorite) => {
+        res.render('editFavorite', {editFavorite});
+    })
+})
+
 
 /* Step 5
  *
