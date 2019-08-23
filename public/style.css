@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    background-color: red;
+}
+
+h1, h2, p, ul, form {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+}
