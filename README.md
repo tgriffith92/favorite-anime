@@ -5,6 +5,7 @@ https://github.com/tgriffith92/favorite-anime/projects/1
 
 **Wireframe**
 
+![Home Page](https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/Main%20Page.png)
 
 **ERD**
 ![ERD](https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/ERD.png)
