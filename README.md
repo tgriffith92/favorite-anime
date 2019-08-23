@@ -7,4 +7,4 @@ https://github.com/tgriffith92/favorite-anime/projects/1
 
 
 **ERD**
-![ERD] (https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/ERD.png)
+![ERD](https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/ERD.png)
