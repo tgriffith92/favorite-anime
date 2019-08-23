@@ -9,5 +9,7 @@ https://github.com/tgriffith92/favorite-anime/projects/1
 
 ![Create Pages](https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/Create%20Pages.png)
 
+![View Pages](https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/VIew%20Pages.png)
+
 **ERD**
 ![ERD](https://github.com/tgriffith92/favorite-anime/blob/master/Wireframe/ERD.png)
