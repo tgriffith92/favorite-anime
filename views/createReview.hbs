@@ -1,16 +1,16 @@
-<h2>Your First Anime</h2>
+<h2>Anime Review</h2>
 
 <form method="POST" action="/animeReviews">
 
-<label for="name">Name:</label>
-<input type="text" name="name"/><br>
+<label for="name">Anime name:</label>
+<input type="text" name="name" placeholder="Anime name"/><br>
 
 <label for="rating">Rating (between 1 and 5):</label>
-<input type="number" name="rating" min="1" max="5"/><br>
+<input type="number" name="rating" min="1" max="5" placeholder="Your rating"/><br>
 
-<label for="firstAnime">First Anime:</label><br>
-<textarea name="reviews" cols="30" rows="10">
-    Enter your review here...
+<label for="animeReview">Review:</label><br>
+<textarea name="reviews" cols="30" rows="10" placeholder="Enter your review here...">
+    
 </textarea><br>
 
 <input type="submit" value="Submit"/>

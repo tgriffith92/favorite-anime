@@ -1,10 +1,10 @@
 <div>
-    <p>Name: {{review.name}}</p>
-    <p>Year: {{review.rating}}</p>
-    <p>First Anime: {{review.reviews}}</p>
+    <p>Anime name: {{review.name}}</p>
+    <p>Rating (between 1 and 5): {{review.rating}}</p>
+    <p>Review: {{review.reviews}}</p>
 </div>
 
-<p><a href="/animeReviews/{{review._id}}/individual">Edit Anime</a></p>
+<p><a href="/animeReviews/{{review._id}}/individual">Edit Review</a></p>
 
 <form method="POST" action="/animeReviews/{{review._id}}?_method=DELETE">
 
