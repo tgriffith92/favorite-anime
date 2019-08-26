@@ -1,11 +1,27 @@
 body {
+    height: 100%;
     margin: 0;
     background-color: red;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, p, ul, form {
     text-align: center;
     font-family: 'Acme', sans-serif;
+}
+
+.favoriteForm {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 0);
+}
+
+label {
+    padding-left: 0;
+}
+
+input {
+    margin: 10px;
 }
 
 a {
@@ -18,4 +34,13 @@ ul {
 
 input[type=text]:focus {
     background-color: orange;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
 }
