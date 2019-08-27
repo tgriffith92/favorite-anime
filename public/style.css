@@ -17,6 +17,13 @@ main {
     background: linear-gradient(black, red);
 }
 
+div {
+    margin: 0 auto;
+    height: 70vh;
+    width: 50vw;
+    background: linear-gradient(black, darkred);
+}
+
 img {
     display: block;
     margin: 0 auto;
