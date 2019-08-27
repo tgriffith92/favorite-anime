@@ -1,11 +1,13 @@
-<h2>First Anime list</h2>
+<h1>First Anime list</h1>
 
-<p><a href="/firstAnime/initial">What was the first anime you watched?</a></p>
+<div>
+    <p><a href="/firstAnime/initial">What was the first anime you watched?</a></p>
 
-<ul>
-    {{#each allFirst}}
-    <li>
-        <a href="/firstAnime/{{_id}}">{{firstAnime}}</a>
-    </li>
-    {{/each}}
-</ul>
+    <ul>
+        {{#each allFirst}}
+        <li>
+            <a href="/firstAnime/{{_id}}">{{firstAnime}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

@@ -14,7 +14,7 @@ nav {
 }
 
 main {
-    background-color: black;
+    background: linear-gradient(black, red);
 }
 
 img {
@@ -32,9 +32,13 @@ h1, h2, p, ul, form {
 
 .favoriteForm, .firstForm, .reviewForm {
     margin: 0 auto;
-    background-color: rgb(255, 255, 0);
+    background: linear-gradient(rgba(255, 255, 0, 0.94), rgb(255, 119, 0));
     border-radius: 20px;
     font-size: 20px;
+}
+
+form {
+    color: black;
 }
 
 label {
@@ -51,7 +55,7 @@ a {
 }
 
 a:hover {
-    background-color: black;
+    background-color: red;
 }
 
 ul {
