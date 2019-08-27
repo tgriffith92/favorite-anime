@@ -13,11 +13,6 @@ nav {
     font-size: 150%;
 }
 
-nav p {
-    position: sticky;
-    top: 0;
-}
-
 main {
     background-color: black;
 }
