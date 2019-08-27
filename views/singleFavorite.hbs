@@ -1,3 +1,7 @@
+<p>
+    <a href="/anime">Home Page</a>
+</p>
+
 <div>
     <p>Name: {{singleFavorite.name}}</p>
     <p>Favorite Anime: {{singleFavorite.favorite}}</p>
@@ -6,7 +10,9 @@
     <p>Description: {{singleFavorite.description}}</p>
 </div>
 
-<p><a href="/anime/{{singleFavorite._id}}/edit">Edit Anime</a></p>
+<p>
+    <a href="/anime/{{singleFavorite._id}}/edit">Edit Anime</a>
+</p>
 
 <form method="POST" action="/anime/{{singleFavorite._id}}?_method=DELETE">
 
