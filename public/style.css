@@ -9,6 +9,11 @@ body {
 header {
     display: flex;
     justify-content: space-around;
+    font-size: 150%;
+}
+
+img {
+    margin: 0 auto;
 }
 
 h1, h2, p, ul, form {
