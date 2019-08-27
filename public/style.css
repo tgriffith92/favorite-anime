@@ -6,10 +6,20 @@ body {
     flex-direction: column;
 }
 
-header {
+nav {
     display: flex;
+    background-color: black;
     justify-content: space-around;
     font-size: 150%;
+}
+
+nav p {
+    position: sticky;
+    top: 0;
+}
+
+main {
+    background-color: black;
 }
 
 img {
@@ -22,6 +32,7 @@ img {
 h1, h2, p, ul, form {
     text-align: center;
     font-family: 'Acme', sans-serif;
+    color: white;
 }
 
 .favoriteForm, .firstForm, .reviewForm {
@@ -62,5 +73,5 @@ footer {
    bottom: 0;
    width: 100%;
    background-color: black;
-   color: white;
+   color: yellow;
 }
