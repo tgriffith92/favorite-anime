@@ -2,6 +2,15 @@
 
 This app will allow you to enter your favorite anime, first anime, and leave a review.
 
+**List of Technologies**
+* HTML
+* CSS
+* Javascript
+* MongoDB
+* Express
+* Handlebars
+* Node.js
+
 **Deployed App**
 https://calm-tundra-52111.herokuapp.com/anime
 
