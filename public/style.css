@@ -84,6 +84,12 @@ ul {
 
 .button {
     font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px black;
+}
+
+.button:active {
+    transform: translateY(5px);
 }
 
 input[type=text]:focus {
