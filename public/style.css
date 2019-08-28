@@ -78,6 +78,10 @@ ul {
     font-size: 200%;
 }
 
+.link:hover {
+    background-color: black;
+}
+
 input[type=text]:focus {
     background-color: orange;
 }
