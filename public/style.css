@@ -82,6 +82,10 @@ ul {
     background-color: black;
 }
 
+.button {
+    font-size: 20px;
+}
+
 input[type=text]:focus {
     background-color: orange;
 }
